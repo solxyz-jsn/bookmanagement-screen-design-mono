@@ -7,7 +7,7 @@
 | 論理名 | 物理名 |データ型 | PKEY | NOT NULL| 備考 |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |書籍ID| BOOKID |INTEGER |○ |○ | AUTO_INCREMENT |
-|タイトル| TITLE | VARCHAR(100) ○ | |
+|タイトル| TITLE | VARCHAR(100) |○ | |
 |著者| WRITER |VARCHAR(50)| ○ | |
 |出版社ID | PUBLISHER | INTEGER| ○ | |
 |価格 |PRICE |INTEGER  | |
@@ -23,7 +23,7 @@
 | 論理名 | 物理名 |データ型 | PKEY | NOT NULL| 備考 |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |書籍ID| BOOKID |INTEGER |○ |○ | AUTO_INCREMENT |
-|ユーザID| USERID| VARCHAR(100) ○ | |
+|ユーザID| USERID| VARCHAR(100) |○ | |
 |パスワード| PASSWORD |VARCHAR(50)| ○ | |
 |所属部署ID| DEPTID | INTEGER | ○ | |
 |名前| NAME |VARCHAR(50)| ○ | |
