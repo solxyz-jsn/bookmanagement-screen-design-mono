@@ -15,7 +15,7 @@
     
     
       
-        <title>画面一覧 - 書籍管理アプリケーション</title>
+        <title>テーブル定義 - 書籍管理アプリケーション</title>
       
     
     
@@ -81,7 +81,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              画面一覧
+              テーブル定義
             
           </span>
         </div>
@@ -165,20 +165,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="画面一覧" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../screen-list/" title="画面一覧" class="md-nav__link">
       画面一覧
     </a>
-    
   </li>
 
     
@@ -198,11 +189,74 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../tables/" title="テーブル定義" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        テーブル定義
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="テーブル定義" class="md-nav__link md-nav__link--active">
       テーブル定義
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    書籍情報テーブル
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    ユーザマスタ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    部署マスタ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    出版社マスタ
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -313,6 +367,44 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    書籍情報テーブル
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    ユーザマスタ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    部署マスタ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    出版社マスタ
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -327,46 +419,212 @@
                   
                 
                 
-                <h1 id="_1">画面一覧</h1>
+                <h1 id="_1">テーブル定義</h1>
+<h2 id="_2">書籍情報テーブル</h2>
+<p>書籍の情報を管理するテーブル</p>
 <table>
 <thead>
 <tr>
-<th align="left">画面ID</th>
-<th align="left">画面名</th>
-<th align="left">URL</th>
-<th align="left">説明</th>
+<th align="center">論理名</th>
+<th align="center">物理名</th>
+<th align="center">データ型</th>
+<th align="center">PKEY</th>
+<th align="center">NOT NULL</th>
+<th align="center">備考</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">LOGIN</td>
-<td align="left"><a href="../login/">ログイン画面</a></td>
-<td align="left">/</td>
-<td align="left">ログインを行う。セッションがない場合に表示。</td>
+<td align="center">書籍ID</td>
+<td align="center">BOOKID</td>
+<td align="center">INTEGER</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">AUTO_INCREMENT</td>
 </tr>
 <tr>
-<td align="left">LIST</td>
-<td align="left"><a href="../list/">書籍一覧画面</a></td>
-<td align="left">/list</td>
-<td align="left">書籍の一覧表示および検索を行う。</td>
+<td align="center">タイトル</td>
+<td align="center">TITLE</td>
+<td align="center">VARCHAR(100) ○</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td align="left">REGISTER</td>
-<td align="left"><a href="../register/">書籍登録画面</a></td>
-<td align="left">/register</td>
-<td align="left">書籍の登録を行う。</td>
+<td align="center">著者</td>
+<td align="center">WRITER</td>
+<td align="center">VARCHAR(50)</td>
+<td align="center">○</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td align="left">DETAIL</td>
-<td align="left"><a href="../detail/">書籍詳細画面</a></td>
-<td align="left">/detail?id=&lt;書籍ID&gt;</td>
-<td align="left">書籍の情報を表示する。</td>
+<td align="center">出版社ID</td>
+<td align="center">PUBLISHER</td>
+<td align="center">INTEGER</td>
+<td align="center">○</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td align="left">EDIT</td>
-<td align="left"><a href="../edit/">書籍修正画面</a></td>
-<td align="left">/edit?id=&lt;書籍ID&gt;</td>
-<td align="left">書籍の修正を行う。</td>
+<td align="center">価格</td>
+<td align="center">PRICE</td>
+<td align="center">INTEGER</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">購入日</td>
+<td align="center">BOUGHT</td>
+<td align="center">DATE</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">書籍管理部署ID</td>
+<td align="center">MNGDEPT</td>
+<td align="center">INTEGER</td>
+<td align="center">○</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">更新日</td>
+<td align="center">UPDATED</td>
+<td align="center">TIMESTAMP</td>
+<td align="center">○</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">更新者ID</td>
+<td align="center">UPDATOR</td>
+<td align="center">VARCHAR(20)</td>
+<td align="center">○</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">ユーザマスタ</h2>
+<p>書籍の操作を行うユーザのマスタテーブル</p>
+<table>
+<thead>
+<tr>
+<th align="center">論理名</th>
+<th align="center">物理名</th>
+<th align="center">データ型</th>
+<th align="center">PKEY</th>
+<th align="center">NOT NULL</th>
+<th align="center">備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">書籍ID</td>
+<td align="center">BOOKID</td>
+<td align="center">INTEGER</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">AUTO_INCREMENT</td>
+</tr>
+<tr>
+<td align="center">ユーザID</td>
+<td align="center">USERID</td>
+<td align="center">VARCHAR(100) ○</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">パスワード</td>
+<td align="center">PASSWORD</td>
+<td align="center">VARCHAR(50)</td>
+<td align="center">○</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">所属部署ID</td>
+<td align="center">DEPTID</td>
+<td align="center">INTEGER</td>
+<td align="center">○</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">名前</td>
+<td align="center">NAME</td>
+<td align="center">VARCHAR(50)</td>
+<td align="center">○</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">部署マスタ</h2>
+<p>ユーザが所属する部署を管理するマスタテーブル</p>
+<table>
+<thead>
+<tr>
+<th align="center">論理名</th>
+<th align="center">物理名</th>
+<th align="center">データ型</th>
+<th align="center">PKEY</th>
+<th align="center">NOT NULL</th>
+<th align="center">備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">部署ID</td>
+<td align="center">ID</td>
+<td align="center">INTEGER</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">名称</td>
+<td align="center">NAME</td>
+<td align="center">VARCHAR(100) ○</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">出版社マスタ</h2>
+<p>出版社情報を管理するマスタテーブル</p>
+<table>
+<thead>
+<tr>
+<th align="center">論理名</th>
+<th align="center">物理名</th>
+<th align="center">データ型</th>
+<th align="center">PKEY</th>
+<th align="center">NOT NULL</th>
+<th align="center">備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">出版社ID</td>
+<td align="center">ID</td>
+<td align="center">INTEGER</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">名称</td>
+<td align="center">NAME</td>
+<td align="center">VARCHAR(100) ○</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 </tbody>
 </table>
@@ -388,7 +646,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href=".." title="HOME" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../screen-flow/" title="画面遷移図" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -397,19 +655,19 @@
                 <span class="md-footer-nav__direction">
                   前
                 </span>
-                HOME
+                画面遷移図
               </div>
             </div>
           </a>
         
         
-          <a href="../screen-flow/" title="画面遷移図" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../login/" title="ログイン画面" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   次
                 </span>
-                画面遷移図
+                ログイン画面
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
