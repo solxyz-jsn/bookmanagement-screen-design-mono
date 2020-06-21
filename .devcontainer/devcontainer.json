@@ -1,0 +1,9 @@
+{
+    "name": "MkDocs",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "build",
+    "workspaceFolder": "/work",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    }
+}
