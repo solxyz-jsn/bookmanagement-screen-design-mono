@@ -7,14 +7,14 @@
 | 論理名 | 物理名 |データ型 | PKEY | NOT NULL| 備考 |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |書籍ID| BOOKID |INTEGER |○ |○ | AUTO_INCREMENT |
-|タイトル| TITLE | VARCHAR(100) |○ | |
-|著者| WRITER |VARCHAR(50)| ○ | |
-|出版社ID | PUBLISHER | INTEGER| ○ | |
-|価格 |PRICE |INTEGER  | |
-|購入日| BOUGHT | DATE  | |
-|書籍管理部署ID| MNGDEPT | INTEGER |○| |
-|更新日| UPDATED |TIMESTAMP |○ | |
-|更新者ID| UPDATOR | VARCHAR(20)| ○ | |
+|タイトル| TITLE | VARCHAR(100) ||○ | |
+|著者| WRITER |VARCHAR(50)| |○ | |
+|出版社ID | PUBLISHER | INTEGER|| ○ | |
+|価格 |PRICE |INTEGER  | ||
+|購入日| BOUGHT | DATE  | ||
+|書籍管理部署ID| MNGDEPT | INTEGER| |○| |
+|更新日| UPDATED |TIMESTAMP ||○ | |
+|更新者ID| UPDATOR | VARCHAR(20)| |○ | |
 
 ## ユーザマスタ
 
@@ -22,11 +22,11 @@
 
 | 論理名 | 物理名 |データ型 | PKEY | NOT NULL| 備考 |
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|書籍ID| BOOKID |INTEGER |○ |○ | AUTO_INCREMENT |
-|ユーザID| USERID| VARCHAR(100) |○ | |
-|パスワード| PASSWORD |VARCHAR(50)| ○ | |
-|所属部署ID| DEPTID | INTEGER | ○ | |
-|名前| NAME |VARCHAR(50)| ○ | |
+|ユーザーID| BOOKID |INTEGER |○ |○ | AUTO_INCREMENT |
+|ログインID| USERID| VARCHAR(100) ||○ | |
+|パスワード| PASSWORD |VARCHAR(50)|| ○ | |
+|所属部署ID| DEPTID | INTEGER || ○ | |
+|名前| NAME |VARCHAR(50)| ○ | ||
 
 ## 部署マスタ
 
@@ -35,7 +35,7 @@
 | 論理名 | 物理名 |データ型 | PKEY | NOT NULL| 備考 |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |部署ID| ID |INTEGER |○ |○ | |
-|名称| NAME| VARCHAR(100) ○ | |
+|名称| NAME| VARCHAR(100)|| ○ | |
 
 ## 出版社マスタ
 
@@ -44,4 +44,4 @@
 | 論理名 | 物理名 |データ型 | PKEY | NOT NULL| 備考 |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |出版社ID| ID |INTEGER |○ |○ | |
-|名称| NAME| VARCHAR(100) ○ | |
+|名称| NAME| VARCHAR(100)|| ○ | |
