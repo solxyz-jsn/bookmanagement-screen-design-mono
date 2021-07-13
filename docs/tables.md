@@ -22,8 +22,8 @@
 
 | 論理名 | 物理名 |データ型 | PKEY | NOT NULL| 備考 |
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|ユーザーID| BOOKID |INTEGER |○ |○ | AUTO_INCREMENT |
-|ログインID| USERID| VARCHAR(100) ||○ | |
+|ユーザーID| USERID |INTEGER |○ |○ | AUTO_INCREMENT |
+|ログインID| LOGINID| VARCHAR(100) ||○ | |
 |パスワード| PASSWORD |VARCHAR(50)|| ○ | |
 |所属部署ID| DEPTID | INTEGER || ○ | |
 |名前| NAME |VARCHAR(50)|| ○ | ||
