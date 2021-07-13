@@ -26,7 +26,7 @@
 |ログインID| USERID| VARCHAR(100) ||○ | |
 |パスワード| PASSWORD |VARCHAR(50)|| ○ | |
 |所属部署ID| DEPTID | INTEGER || ○ | |
-|名前| NAME |VARCHAR(50)| ○ | ||
+|名前| NAME |VARCHAR(50)|| ○ | ||
 
 ## 部署マスタ
 
