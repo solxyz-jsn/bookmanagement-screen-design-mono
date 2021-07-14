@@ -14,7 +14,7 @@
 |購入日| BOUGHT | DATE  | ||
 |書籍管理部署ID| MNGDEPT | INTEGER| |○| |
 |更新日| UPDATED |TIMESTAMP ||○ | |
-|更新者ID| UPDATOR | VARCHAR(20)| |○ | |
+|更新者ID| UPDATOR | INTEGER | |○ | |
 
 ## ユーザマスタ
 
