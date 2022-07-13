@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
@@ -380,6 +380,19 @@
     登録ボタン押下時
   </a>
   
+    <nav class="md-nav" aria-label="登録ボタン押下時">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    ※1・・・処理順序について
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -511,6 +524,19 @@
     登録ボタン押下時
   </a>
   
+    <nav class="md-nav" aria-label="登録ボタン押下時">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    ※1・・・処理順序について
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -636,17 +662,17 @@
 </ol>
 <h3 id="_8">登録ボタン押下時</h3>
 <ol>
-<li>入力チェックを実施する</li>
-<li>【入力エラーがある場合】<ol>
-<li>エラーの内容を画面に表示し、以降のアクション内処理を中断する。</li>
-</ol>
-</li>
 <li>確認ダイアログを表示する。「登録します。よろしいですか？」</li>
 <li>【「はい」以外が選択された場合】<ol>
 <li>以降のアクション内処理を中断する。</li>
 </ol>
 </li>
-<li>画面の入力項目及び、以下の情報から書籍情報の登録処理を行う。<ul>
+<li>入力チェックを実施する</li>
+<li>【入力エラーがある場合】<ol>
+<li>エラーの内容を画面に表示し、以降のアクション内処理を中断する。</li>
+</ol>
+</li>
+<li>画面の入力項目、および以下の情報から書籍情報の登録処理を行う。<ul>
 <li>更新者：ログイン情報.ユーザID</li>
 <li>更新日：本処理の実行時間</li>
 <li>更新者部署ID：ログイン情報.部署ID</li>
@@ -656,9 +682,14 @@
 <li>メッセージ「サーバにてエラーが発生しました。」を表示し、以降のアクション内処理を中断する。</li>
 </ol>
 </li>
-<li>メッセージ「登録に成功しました。」を表示する。</li>
-<li><a href="../detail/">書籍詳細画面</a>に遷移する。</li>
+<li>メッセージ「登録に成功しました。」を表示し、<a href="../detail/">書籍詳細画面</a>に遷移する。<span style="color: red; font-weight: bold;">※1</span></li>
 </ol>
+<h4 id="1">※1・・・処理順序について</h4>
+<ul>
+<li>メッセージの表示タイミングと表示方式は問わない</li>
+<li>画面遷移とメッセージ表示の順序は前後しても構わない</li>
+<li>ただし、利用者がメッセージを見失わないように留意すること</li>
+</ul>
 <h2 id="_9">入力チェック</h2>
 <table>
 <thead>
@@ -789,10 +820,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.a877e258.min.js"></script>
+      <script src="../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
     
   </body>
