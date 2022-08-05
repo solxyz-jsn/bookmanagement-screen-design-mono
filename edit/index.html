@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
     
     
       
@@ -408,6 +408,19 @@
     登録ボタン押下時
   </a>
   
+    <nav class="md-nav" aria-label="登録ボタン押下時">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    ※1・・・処理順序について
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -510,6 +523,19 @@
   <a href="#_8" class="md-nav__link">
     登録ボタン押下時
   </a>
+  
+    <nav class="md-nav" aria-label="登録ボタン押下時">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    ※1・・・処理順序について
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -663,9 +689,14 @@
 <li>メッセージ「サーバにてエラーが発生しました。」を表示し、以降のアクション内処理を中断する。</li>
 </ol>
 </li>
-<li>メッセージ「登録に成功しました。」を表示する。</li>
-<li><a href="../detail/">書籍詳細画面</a>に遷移する。</li>
+<li>メッセージ「登録に成功しました。」を表示し、<a href="../detail/">書籍詳細画面</a>に遷移する。[※1]</li>
 </ol>
+<h4 id="1">※1・・・処理順序について</h4>
+<ul>
+<li>メッセージの表示タイミングと表示方式は問わない</li>
+<li>画面遷移とメッセージ表示の順序は前後しても構わない</li>
+<li>ただし、利用者がメッセージを見失わないように留意すること</li>
+</ul>
 <h2 id="_9">入力チェック</h2>
 <table>
 <thead>
