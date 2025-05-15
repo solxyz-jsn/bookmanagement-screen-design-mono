@@ -6,7 +6,7 @@
 
 ```
 $ pip install mkdocs
-$ pip isntall mkdocs-material
+$ pip install mkdocs-material
 ```
 
 ### 実行
